@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Tablas de Multiplicar</title>
+
+    <link
+        rel="stylesheet"
+        href="multiplicar.css"
+    >
+</head>
+
+<body>
+
+    <main class="contenedor">
+
+        <header class="encabezado">
+
+            <p class="etiqueta">
+                TALLER JAVASCRIPT
+            </p>
+
+            <h1>
+                Tablas de Multiplicar
+            </h1>
+
+            <p class="descripcion">
+                Escribe un número y genera
+                automáticamente su tabla de multiplicar.
+            </p>
+
+        </header>
+
+
+        <!-- ÁREA DE INTERACCIÓN -->
+
+        <section class="controles">
+
+            <label for="txtNumero">
+                ¿Qué tabla deseas practicar?
+            </label>
+
+            <div class="grupo-controles">
+
+                <input
+                    type="number"
+                    id="txtNumero"
+                    placeholder="Ejemplo: 8"
+                    value="3"
+                    min="0"
+                >
+
+                <button
+                    type="button"
+                    onclick="generarTablas()"
+                >
+                    PROBAR
+                </button>
+
+            </div>
+
+            <p
+                id="mensaje"
+                class="mensaje"
+                aria-live="polite"
+            >
+                Actualmente estás viendo la tabla del 3.
+            </p>
+
+        </section>
+
+
+        <!--
+            CONTENEDOR DE LA TABLA
+
+            JavaScript utilizará este ID
+            para modificar su contenido.
+        -->
+
+        <section
+            id="contenedorTabla"
+            class="tabla"
+        >
+
+            <!-- TABLA DEL 3 INICIAL -->
+
+            <div class="titulo-tabla">
+                Tabla del 3
+            </div>
+
+            <div class="fila">
+                <span>3 × 1</span>
+                <strong>3</strong>
+            </div>
+
+            <div class="fila">
+                <span>3 × 2</span>
+                <strong>6</strong>
+            </div>
+
+            <div class="fila">
+                <span>3 × 3</span>
+                <strong>9</strong>
+            </div>
+
+            <div class="fila">
+                <span>3 × 4</span>
+                <strong>12</strong>
+            </div>
+
+            <div class="fila">
+                <span>3 × 5</span>
+                <strong>15</strong>
+            </div>
+
+            <div class="fila">
+                <span>3 × 6</span>
+                <strong>18</strong>
+            </div>
+
+            <div class="fila">
+                <span>3 × 7</span>
+                <strong>21</strong>
+            </div>
+
+            <div class="fila">
+                <span>3 × 8</span>
+                <strong>24</strong>
+            </div>
+
+            <div class="fila">
+                <span>3 × 9</span>
+                <strong>27</strong>
+            </div>
+
+            <div class="fila">
+                <span>3 × 10</span>
+                <strong>30</strong>
+            </div>
+
+        </section>
+
+
+        <footer>
+
+            <p>
+                Creado por:
+                <strong>Arielz47</strong>
+            </p>
+
+        </footer>
+
+    </main>
+
+
+    <script src="multiplicar.js"></script>
+
+</body>
+
+</html>

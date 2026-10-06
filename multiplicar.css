@@ -1,0 +1,409 @@
+/* ==================================
+   CONFIGURACIÓN GENERAL
+================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+
+    min-height: 100vh;
+
+    padding: 30px 20px;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background:
+        linear-gradient(
+            135deg,
+            #eaf2ff,
+            #f7f9fc
+        );
+
+    color: #1f2937;
+
+}
+
+
+/* ==================================
+   CONTENEDOR PRINCIPAL
+================================== */
+
+.contenedor {
+
+    width: 100%;
+
+    max-width: 720px;
+
+    margin: auto;
+
+}
+
+
+/* ==================================
+   ENCABEZADO
+================================== */
+
+.encabezado {
+
+    text-align: center;
+
+    margin-bottom: 25px;
+
+}
+
+
+.etiqueta {
+
+    display: inline-block;
+
+    margin-bottom: 10px;
+
+    padding: 7px 14px;
+
+    border-radius: 20px;
+
+    background: #dbeafe;
+
+    color: #1d4ed8;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+}
+
+
+h1 {
+
+    margin-bottom: 10px;
+
+    font-size: 36px;
+
+    color: #1e3a8a;
+
+}
+
+
+.descripcion {
+
+    color: #64748b;
+
+    line-height: 1.6;
+
+}
+
+
+/* ==================================
+   CONTROLES
+================================== */
+
+.controles {
+
+    margin-bottom: 25px;
+
+    padding: 25px;
+
+    background: #ffffff;
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.08);
+
+}
+
+
+.controles label {
+
+    display: block;
+
+    margin-bottom: 12px;
+
+    text-align: center;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    color: #334155;
+
+}
+
+
+.grupo-controles {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 12px;
+
+}
+
+
+.grupo-controles input {
+
+    width: 180px;
+
+    padding: 14px 18px;
+
+    border: 2px solid #dbeafe;
+
+    border-radius: 12px;
+
+    outline: none;
+
+    text-align: center;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    color: #1e3a8a;
+
+    background: #f8fafc;
+
+    transition: 0.2s;
+
+}
+
+
+.grupo-controles input:focus {
+
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, 0.15);
+
+}
+
+
+.grupo-controles button {
+
+    padding: 14px 28px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: #2563eb;
+
+    color: #ffffff;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+
+}
+
+
+.grupo-controles button:hover {
+
+    background: #1d4ed8;
+
+    transform: translateY(-2px);
+
+}
+
+
+.mensaje {
+
+    min-height: 20px;
+
+    margin-top: 15px;
+
+    text-align: center;
+
+    color: #64748b;
+
+    font-size: 14px;
+
+}
+
+
+/* ==================================
+   TABLA
+================================== */
+
+.tabla {
+
+    overflow: hidden;
+
+    background: #ffffff;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.1);
+
+}
+
+
+.titulo-tabla {
+
+    padding: 22px;
+
+    text-align: center;
+
+    background: #1e3a8a;
+
+    color: #ffffff;
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+}
+
+
+.fila {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 16px 25px;
+
+    border-bottom:
+        1px solid #e2e8f0;
+
+    font-size: 18px;
+
+    transition: 0.2s;
+
+}
+
+
+.fila:last-child {
+
+    border-bottom: none;
+
+}
+
+
+.fila:hover {
+
+    background: #eff6ff;
+
+}
+
+
+.fila span {
+
+    color: #475569;
+
+}
+
+
+.fila strong {
+
+    min-width: 60px;
+
+    padding: 7px 12px;
+
+    text-align: center;
+
+    border-radius: 20px;
+
+    background: #dbeafe;
+
+    color: #1d4ed8;
+
+}
+
+
+/* ==================================
+   PIE DE PÁGINA
+================================== */
+
+footer {
+
+    margin-top: 25px;
+
+    padding: 15px;
+
+    text-align: center;
+
+    color: #64748b;
+
+    font-size: 14px;
+
+}
+
+
+footer strong {
+
+    color: #1d4ed8;
+
+}
+
+
+/* ==================================
+   RESPONSIVE
+================================== */
+
+@media (max-width: 520px) {
+
+    body {
+
+        padding: 20px 12px;
+
+    }
+
+
+    h1 {
+
+        font-size: 29px;
+
+    }
+
+
+    .controles {
+
+        padding: 20px;
+
+    }
+
+
+    .grupo-controles {
+
+        flex-direction: column;
+
+    }
+
+
+    .grupo-controles input,
+    .grupo-controles button {
+
+        width: 100%;
+
+    }
+
+
+    .fila {
+
+        padding: 14px 18px;
+
+        font-size: 16px;
+
+    }
+
+}
